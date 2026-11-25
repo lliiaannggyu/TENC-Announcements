@@ -1,3 +1,5 @@
+## TENC Store v1.63 上线
+适配小米手表 5，修复启动即闪退：部分国产手表缺少 Wear Compose 依赖的 com.google.wear.input.WearHapticFeedbackConstants 类，导致一打开就 ClassNotFoundException 闪退。本版接入 cnwearoverlay 兼容层，编译期自动注入缺失的桩类，同时补全表冠触觉震动、修正小米表冠常量震感异常。无需 Xposed、无需额外设置，直接更新即可。
 ## TENC Store v1.62 上线
 修复剪贴板自动跳转经常失效的问题：Android 10 起系统限制「只有窗口获得输入焦点的应用才能读剪贴板」（这不是可申请的系统权限），此前在 onResume 时机读取早于获焦会被静默返回空。现改为在窗口真正获得焦点后读取，分享内容检测可靠生效；检测到分享时若不在首页，回到首页后也会自动补跳转。
 ## TENC Store v1.61 上线
