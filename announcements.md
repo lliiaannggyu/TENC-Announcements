@@ -1,3 +1,6 @@
+## TENC Store v1.64 上线
+修复「分享该应用」：去掉会切换窗口焦点的系统分享面板，并排除自己刚复制的内容，不再自动跳走、不再清空剪贴板，复制文本后可正常粘贴。
+全局返回：右滑与返回键现在一律只返回上一级页面，在首页不再退出应用。
 ## TENC Store v1.63 上线
 适配小米手表 5，修复启动即闪退：部分国产手表缺少 Wear Compose 依赖的 com.google.wear.input.WearHapticFeedbackConstants 类，导致一打开就 ClassNotFoundException 闪退。本版接入 cnwearoverlay 兼容层，编译期自动注入缺失的桩类，同时补全表冠触觉震动、修正小米表冠常量震感异常。无需 Xposed、无需额外设置，直接更新即可。
 ## TENC Store v1.62 上线
